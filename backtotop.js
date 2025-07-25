@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Show/hide on scroll
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 300) {
+    if (window.scrollY > 15) {
       btn.classList.add("show");
     } else {
       btn.classList.remove("show");
