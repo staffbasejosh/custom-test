@@ -1,17 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // ✅ Change this to your trigger class
-  const pageSelector = "backtotop";
-
-  // Only load if the page has the specific class
-  if (!document.querySelector(pageSelector)) return;
-
   // Create the button
   const btn = document.createElement("div");
   btn.id = "backToTopBtn";
   btn.innerHTML = '<img src="https://cdn-icons-png.flaticon.com/512/7604/7604589.png" />';
   document.body.appendChild(btn);
 
-  // Style the button
+  // Add styles
   const css = `
     #backToTopBtn {
       position: fixed;
@@ -42,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
   style.innerHTML = css;
   document.head.appendChild(style);
 
-  // Show button after scrolling
+  // Show/hide on scroll
   window.addEventListener("scroll", function () {
     if (window.scrollY > 300) {
       btn.classList.add("show");
