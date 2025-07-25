@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // ✅ Change this to your trigger class
-  const pageSelector = ".has-back-to-top";
+  const pageSelector = "has-back-to-top";
 
   // Only load if the page has the specific class
   if (!document.querySelector(pageSelector)) return;
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Create the button
   const btn = document.createElement("div");
   btn.id = "backToTopBtn";
-  btn.innerHTML = '<img src="https://your-intranet-url.com/up-arrow.png" alt="Back to Top" />';
+  btn.innerHTML = '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRTcuU8mD2r9LmrWc2BuZeti9nw5TvXOqmrQ&s" />';
   document.body.appendChild(btn);
 
   // Style the button
