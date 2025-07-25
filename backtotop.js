@@ -1,1 +1,3 @@
-alert("✅ JavaScript loaded and running!");
+document.addEventListener("DOMContentLoaded", function () {
+  document.body.style.backgroundColor = "pink";
+});
