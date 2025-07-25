@@ -1,3 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  document.body.style.backgroundColor = "pink";
+  const target = document.querySelector(".desktop.with-contextual-toolbar.wow-header-activated.with-mega-menu #wrapper");
+  if (target) {
+    target.style.backgroundColor = "pink";
+  }
 });
